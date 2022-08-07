@@ -75,7 +75,7 @@ def timeline(username):
     form = TweetForm()
 
     if username:
-        user = User.query.filter_by(username=username).first()
+        user = User.query.filter_by(username=username).fir  st()
         if not user:
             abort(404)
 
