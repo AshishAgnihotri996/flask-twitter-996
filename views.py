@@ -29,7 +29,7 @@ def login():
         if check_password_hash(user.password, form.password.data):
             login_user(user, remember=form.remember.data)
 
-            return redirect(url_for('profile'))
+            return redirect(url_for('profile', logged_in_user = current_user))
 
         return render_template('index.html', form=form, message='Login Failed!')
 
