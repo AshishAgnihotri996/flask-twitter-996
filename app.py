@@ -1,5 +1,4 @@
 from flask import Flask #import
-
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate, MigrateCommand # to createa the db
 from flask_script import Manager
